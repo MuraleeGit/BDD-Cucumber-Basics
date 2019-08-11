@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="42.311028">
+<testcase classname="LnkedIn Login" name="LinkedIn Login test scenario" time="19.711723">
+<system-out><![CDATA[Given user is already on login page.........................................passed
+When title of login page is LinkedIn........................................passed
+Then user enters "murali.p83@gmail.com" and "Kanathil@123"..................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="LnkedIn Login" name="LinkedIn Login test scenario 2" time="22.599305">
+<failure message="org.junit.ComparisonFailure: expected:&lt;([1]) LinkedIn&gt; but was:&lt;([3]) LinkedIn&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at stepDefinition.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:56)&#13;&#10;&#9;at ✽.Then user is on home page(C:/Users/hp/eclipse-workspace/CucumberBDDBasics/src/main/java/Features/loginExampleskeyword.feature:9)&#13;&#10;"><![CDATA[Given user is already on login page.........................................passed
+When title of login page is LinkedIn........................................passed
+Then user enters "sajina.thekkil@gmail.com" and "Kanathil@123"..............passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<([1]) LinkedIn> but was:<([3]) LinkedIn>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:56)
+	at ✽.Then user is on home page(C:/Users/hp/eclipse-workspace/CucumberBDDBasics/src/main/java/Features/loginExampleskeyword.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
